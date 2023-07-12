@@ -173,31 +173,19 @@ button:hover {
 }
 
 .box-1 {
-  grid-column: 1/2;
+  grid-column: 1;
 }
 
 .box-2 {
-  grid-column: 2/2;
+  grid-column: 1/2;
 }
 
 /* results viewbox */
 
-.player-placement,
-.cpu-placement {
-display: inline-flex;
-border: 0;
-border-radius: 100vmax;
-padding: 6em 6em;
-margin-top: 5rem;
-line-height: 1;
-color: var(--clr-neutral-300);
-background-color: var(--clr-neutral-600);
-}
-
 .picked {
   display: inline-flex;
-  margin-top: 5rem;
-  gap: 23rem;
+  margin-top: 2rem;
+  gap: 26rem;
   color: var(--clr-neutral-300);
 }
 
@@ -229,10 +217,9 @@ background-color: var(--clr-neutral-600);
   }
 
   .even-columns {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    gap: 3rem;
+    display: inline-flex;
+    margin-left: 23rem;
+    gap: 5rem;
   }
 
   .even-columns-results {

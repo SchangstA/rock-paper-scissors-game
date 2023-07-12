@@ -23,23 +23,27 @@
         <h1 id="score" style="font-size: 4rem; color: hsl(217, 16%, 45%);">0</h1>
       </div>
     </div>
-    <div class="battle-icons margin-top-700 even-columns">
-      <button class="button bg-paper-100 box-1" id="paper-button">
-        <img src="images/icon-paper.svg" alt="">
-      </button>
-      <button class="button bg-scissors-100 box-2" id="scissors-button">
-        <img src="images/icon-scissors.svg" alt="">
-      </button>
+    <div class="even-columns">
+      <div class="margin-top-700" id="paper-button">
+        <button class="button bg-paper-100">
+          <img src="images/icon-paper.svg" alt="">
+        </button>
+      </div>
+      <div class="margin-top-700" id="scissors-button">
+        <button class="button bg-scissors-100">
+          <img src="images/icon-scissors.svg" alt="">
+        </button>
+      </div>
     </div>
-    <div class="even-columns-rock">
-      <button class="button bg-rock-100 box-3" id="rock-button">
+    <div class="even-columns-rock" id="rock-button">
+      <button class="button bg-rock-100">
         <img src="images/icon-rock.svg" alt="">
       </button>
     </div>
   </div>
 
   <!-- results container -->
-  <div class="visually-hidde container text-center">
+  <div class="visually-hidde container text-center" id="results-container">
     <div class="picked">
       <h1>You Picked</h1>
       <h1>CPU Picked</h1>
@@ -53,10 +57,10 @@
       </div>
     </div>
   </div>
-  <div class="visually-hidden container text-center">
+  <div class="visually-hidde container text-center">
     <h1 id="win-lose">YOU LOSE</h1>
     <div>
-      <button class="play-again-button">PLAY AGAIN</button>
+      <button class="play-again-button" id="play-again">PLAY AGAIN</button>
     </div>
   </div>
   <div>
