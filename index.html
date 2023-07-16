@@ -6,7 +6,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css" class="css">
   <title>Rock, Paper, Scissors</title>
 
@@ -15,15 +14,18 @@
 
   <!-- choice container -->
   <div class="container margin-top-700">
-    <div style="display: inline-flex;" class="heading-box vertical-align-center" >
+    <div class="heading-box vertical-align-center" >
       <img class="logo" src="images/logo.svg" alt="">
       <div class="text-center score-box">
         <h3 style="color: hsl(229, 64%, 46%);">Score</h3>
         <hr>
-        <h1 id="score" style="font-size: 4rem; color: hsl(217, 16%, 45%);">0</h1>
+        <h1 id="score" style="font-size: 4rem; color: hsl(217, 16%, 45%);"></h1>
       </div>
     </div>
-    <div class="even-columns">
+    <div class="visually-hidden rules-div" id="rules-pop-up">
+      <img class="rules-image" src="images/image-rules.svg" alt="">
+    </div>
+    <div class="even-columns mx-auto">
       <div class="margin-top-700" id="paper-button">
         <button class="button bg-paper-100">
           <img src="images/icon-paper.svg" alt="">
@@ -43,7 +45,7 @@
   </div>
 
   <!-- results container -->
-  <div class="visually-hidde container text-center" id="results-container">
+  <div class="container text-center" id="results-container">
     <div class="picked">
       <h1>You Picked</h1>
       <h1>CPU Picked</h1>
@@ -57,14 +59,14 @@
       </div>
     </div>
   </div>
-  <div class="visually-hidde container text-center">
-    <h1 id="win-lose">YOU LOSE</h1>
+  <div class="container text-center">
+    <h1 id="win-lose"></h1>
     <div>
       <button class="play-again-button" id="play-again">PLAY AGAIN</button>
     </div>
   </div>
   <div>
-    <button class="rules-button">
+    <button class="rules-button" id="rules">
       <span>RULES</span>
     </button>
   </div>
